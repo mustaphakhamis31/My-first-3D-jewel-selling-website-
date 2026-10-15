@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEVORA — Where Craft Meets Elegance</title>
+<meta name="description" content="BEVORA. An atelier of metal, light and time.">
+
+<!-- Google Fonts: Cormorant Garamond (display serif) + Jost (utility sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Grain / vignette overlay -->
+<div class="grain-overlay"></div>
+
+<!-- ============ FIXED NAVIGATION ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="d-flex align-items-center justify-content-between py-3">
+      <a href="#hero" class="brand-mark">BEVORA</a>
+
+      <nav class="d-none d-lg-flex align-items-center gap-5 nav-links">
+        <a href="#story">Maison</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Enquire</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+        <span class="menu-toggle-label d-none d-sm-inline">Menu</span>
+        <span class="menu-toggle-bars">
+          <span></span><span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FULLSCREEN DRAWER MENU ============ -->
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-inner">
+    <div class="d-flex justify-content-between align-items-start px-4 px-lg-5 pt-4">
+      <span class="brand-mark small-mark">BEVORA</span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+
+    <div class="drawer-links px-4 px-lg-5">
+      <a href="#hero" class="drawer-link" data-index="01"><span class="dl-index">01</span><span class="dl-text">Home</span></a>
+      <a href="#story" class="drawer-link" data-index="02"><span class="dl-index">02</span><span class="dl-text">Maison</span></a>
+      <a href="#atelier" class="drawer-link" data-index="03"><span class="dl-index">03</span><span class="dl-text">Atelier</span></a>
+      <a href="#collection" class="drawer-link" data-index="04"><span class="dl-index">04</span><span class="dl-text">Collection</span></a>
+      <a href="#contact" class="drawer-link" data-index="05"><span class="dl-index">05</span><span class="dl-text">Enquire</span></a>
+    </div>
+
+    <div class="drawer-footer px-4 px-lg-5 pb-4">
+      <div class="d-flex flex-wrap gap-4 drawer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">Journal</a>
+      </div>
+      <span class="drawer-meta">Nairobi · Geneva · Kyoto</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1974&auto=format&fit=crop" alt="" class="hero-bg-img">
+      <div class="hero-bg-scrim"></div>
+    </div>
+
+    <div class="container-fluid px-4 px-lg-5 hero-content">
+      <p class="eyebrow" data-reveal>Est. 2011 — Fine Objects in Metal</p>
+      <h1 class="hero-title" data-reveal>
+        Elegance,<br>
+        <em>engineered.</em>
+      </h1>
+      <div class="hero-cta d-flex flex-wrap gap-3 mt-4" data-reveal>
+        <a href="#collection" class="btn btn-luxe">View the Collection</a>
+        <a href="#atelier" class="btn btn-luxe-outline">Explore the Atelier <i class="bi bi-arrow-down-right ms-2"></i></a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" data-reveal>
+      <span></span>
+      <small>Scroll</small>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+      <span>WHERE CRAFT MEETS ELEGANCE&nbsp;</span><span aria-hidden="true">✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ BRAND STORY / METRICS ============ -->
+  <section id="story" class="story-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row gy-5 align-items-end mb-5">
+        <div class="col-lg-7">
+          <p class="eyebrow" data-reveal>The Maison</p>
+          <h2 class="section-title" data-reveal>Every object earns<br>its weight in metal.</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="section-copy" data-reveal>Founded by a single goldsmith with one bench and one loupe, BEVORA still tests every alloy by hand before it becomes a piece worth keeping. Nothing leaves the atelier that we would not wear ourselves.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 metrics-row">
+        <div class="col-6 col-lg-3">
+          <div class="metric-card" data-reveal>
+            <span class="metric-number">14</span>
+            <span class="metric-label">Years at the Bench</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card" data-reveal>
+            <span class="metric-number">32</span>
+            <span class="metric-label">International Honours</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card" data-reveal>
+            <span class="metric-number">100<small>%</small></span>
+            <span class="metric-label">Recycled Precious Metal</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card" data-reveal>
+            <span class="metric-number">0</span>
+            <span class="metric-label">Pieces Rushed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2 craft-grid">
+        <div class="col-md-4">
+          <div class="craft-card" data-reveal>
+            <i class="bi bi-gem"></i>
+            <h3>Hand-Set Stones</h3>
+            <p>Every gem is seated under a loupe, one prong at a time, by a single setter from start to finish.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="craft-card" data-reveal>
+            <i class="bi bi-fire"></i>
+            <h3>Alloyed In-House</h3>
+            <p>We melt and test our own metal blends, tuning colour and hardness batch by batch.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="craft-card" data-reveal>
+            <i class="bi bi-recycle"></i>
+            <h3>Traceable Sourcing</h3>
+            <p>Every gram of gold and gram of carbon is logged from mine or lab to finished piece.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATERIAL SELECTOR + 3D VIEWPORT (SIGNATURE) ============ -->
+  <section id="atelier" class="atelier-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow" data-reveal>The Atelier — Live Material Study</p>
+          <h2 class="section-title" data-reveal>Touch the metal<br>before you touch the piece.</h2>
+        </div>
+      </div>
+
+      <div class="row g-5 align-items-center">
+        <!-- 3D Canvas -->
+        <div class="col-lg-7">
+          <div class="viewport-frame">
+            <div id="canvas3d" class="canvas-3d" aria-label="Interactive 3D rendering of a metal ring. Drag to rotate."></div>
+            <div class="viewport-hint"><i class="bi bi-arrows-move"></i> Drag to orbit</div>
+            <div class="viewport-loading" id="viewportLoading">
+              <span class="loader-ring"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Pills + Details -->
+        <div class="col-lg-5">
+          <div class="material-pills" role="tablist" aria-label="Choose material">
+            <button class="pill active" data-material="titanium" role="tab" aria-selected="true">Titanium</button>
+            <button class="pill" data-material="palladium" role="tab" aria-selected="false">Palladium</button>
+            <button class="pill" data-material="rosegold" role="tab" aria-selected="false">Rose Gold</button>
+            <button class="pill" data-material="carbon" role="tab" aria-selected="false">Carbon Fibre</button>
+          </div>
+
+          <div class="material-detail" id="materialDetail">
+            <h3 class="material-name" id="matName">Titanium</h3>
+            <p class="material-desc" id="matDesc">Aerospace-grade and near-indestructible, brushed to a soft, low-glare finish that ages without tarnish.</p>
+            <ul class="material-specs" id="matSpecs">
+              <li><span>Hardness</span><span>6.0 Mohs</span></li>
+              <li><span>Weight</span><span>Ultra-light</span></li>
+              <li><span>Finish</span><span>Brushed matte</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT CATALOG ============ -->
+  <section id="collection" class="catalog-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow eyebrow-dark" data-reveal>The Collection</p>
+          <h2 class="section-title section-title-dark" data-reveal>Pieces made to<br>outlast a trend.</h2>
+        </div>
+      </div>
+
+      <div class="filter-badges mb-5" data-reveal>
+        <button class="badge-filter active" data-filter="all">All</button>
+        <button class="badge-filter" data-filter="atelier">Atelier</button>
+        <button class="badge-filter" data-filter="heritage">Heritage</button>
+        <button class="badge-filter" data-filter="bridal">Bridal</button>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+        <!-- Product cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / ENQUIRE STRIP ============ -->
+  <section id="contact" class="contact-strip">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2 class="section-title">Have something<br>in mind?</h2>
+        </div>
+        <div class="col-lg-5">
+          <form class="contact-form" id="contactForm">
+            <div class="mb-3">
+              <input type="email" class="form-control-luxe" placeholder="Your email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control-luxe" rows="3" placeholder="Tell us what you're picturing"></textarea>
+            </div>
+            <button type="submit" class="btn btn-luxe w-100">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PRODUCT DETAIL MODAL ============ -->
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-modal-backdrop" id="modalBackdrop"></div>
+  <div class="product-modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <div class="row g-0 h-100">
+      <div class="col-lg-6 modal-gallery">
+        <div class="modal-gallery-main">
+          <img src="" alt="" id="modalMainImg">
+        </div>
+        <div class="modal-gallery-thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="col-lg-6 modal-info">
+        <p class="eyebrow eyebrow-dark" id="modalCategory">Atelier</p>
+        <h2 class="modal-title" id="modalTitle">Piece Name</h2>
+        <p class="modal-price" id="modalPrice">$0</p>
+        <p class="modal-description" id="modalDescription">Description</p>
+        <ul class="modal-specs" id="modalSpecs"></ul>
+        <button class="btn btn-luxe-dark w-100 mt-3">Quick Inquiry</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="footer-mark">BEVORA</div>
+
+    <div class="row gy-5 footer-grid">
+      <div class="col-6 col-lg-3">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#story">Maison</a></li>
+          <li><a href="#atelier">Atelier</a></li>
+          <li><a href="#collection">Collection</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Client Care</h4>
+        <ul>
+          <li><a href="#">Sizing Guide</a></li>
+          <li><a href="#">Care &amp; Repair</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#contact">Enquire</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Maison</h4>
+        <ul>
+          <li><a href="#">Our Ateliers</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <span>© 2026 BEVORA Atelier. All rights reserved.</span>
+      <div class="d-flex gap-4">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
